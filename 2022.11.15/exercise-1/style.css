@@ -1,0 +1,76 @@
+p {
+    display: none;
+}
+@media only screen and (max-width: 576px) {
+    body {
+        background-color: green;
+    }
+    .text::after {
+        content: "xs ( extra small ) 576px";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+@media only screen and (min-width:576px) and (max-width: 768px) {
+    body {
+        background-color: bisque; 
+    }
+    .text::after {
+        content: "sm  (small) => 576px";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+@media only screen and (min-width:769px) and (max-width: 992px) {
+    body {
+        background-color: aqua;
+    }
+    .text::after {
+        content: "md (medium) => 768px";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+@media only screen and (min-width:992px) and (max-width: 1200px) {
+    body {
+        background-color: pink;
+    }
+    .text::after {
+        content: "lg (large) => 992px";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }   
+} 
+@media only screen and (min-width:1201px) and (max-width:1400px) {
+    body {
+        background-color: rgb(196, 39, 65);
+    }
+    .text::after {
+        content: "xl (extra large) => 1200px";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+@media only screen and (min-width:1400px) {
+    body {
+        background-color: rgb(230, 86, 110);
+    }
+    .text::after {
+        content: "xxl (extra extra large) => 1400px";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+}
