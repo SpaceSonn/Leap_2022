@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    background-color: #e5e5e5;
+}
+.card {
+    height: 40%;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+h2 {
+    margin: 0;
+    font-weight: 100;
+    color: #a2a2a2;
+    font-size: 20px;
+}
+h1 {
+    margin: 0;
+    font-size: 35px;
+}
+a {
+    align-self: end;
+    color: #5ad67d;
+    text-align: center;
+}
+p {
+    font-weight: 400;
+
+}
+img {
+    object-fit: cover;
+    width: 30%;
+}
+.desc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.botcard img {
+    margin-left: 50px;
+}
