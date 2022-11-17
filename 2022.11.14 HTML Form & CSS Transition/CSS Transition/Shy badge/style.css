@@ -1,6 +1,6 @@
 .container {
-    margin: 300px 0 0 400px;}
-    
+   display: flex;
+}
 h1 {
     padding-top: 20px;
     text-align: center;
@@ -10,5 +10,4 @@ h1 {
 }
 h2 {
     position: absolute;
-
 }
