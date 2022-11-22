@@ -1,13 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+.papa {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
-   display: flex;
+    position: relative;
+    width: 350px;
+    height: 70px;
 }
-h1 {
-    padding-top: 20px;
-    text-align: center;
-    width: 300px;
-    height: 60px;
-    background-color: grey;
+.world {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    background-color: rgb(188, 186, 186);
+    color: white;
+    position: relative;
+    
 }
-h2 {
+.num {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     position: absolute;
+    right: -15px;
+    top: -15px;
+
+}
+.world:hover {
+    position: absolute;
+    background-color: red;
+    cursor: pointer;
+    transition-duration: 1s;
+    z-index: 1;
+}
+.world:hover .num {
+    color: red;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-property: width;
+    transition-delay: 1s;
+    z-index: -1;
 }
