@@ -1,17 +1,6 @@
 * {
     box-sizing: border-box;
 }
-.papa {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container {
-    position: relative;
-    width: 350px;
-    height: 70px;
-}
 .world {
     display: flex;
     justify-content: center;
@@ -21,7 +10,7 @@
     background-color: rgb(188, 186, 186);
     color: white;
     position: relative;
-    
+    transition-duration: 1s;
 }
 .num {
     width: 50px;
@@ -35,7 +24,8 @@
     position: absolute;
     right: -15px;
     top: -15px;
-
+    transition-duration: 1s;
+    transition-property: transform;
 }
 .world:hover {
     position: absolute;
@@ -51,7 +41,7 @@
     top: 10px;
     transition-timing-function: ease;
     transition-duration: 1s;
-    transition-property: width;
+    transition-property: transform;
     transition-delay: 1s;
     z-index: -1;
 }
